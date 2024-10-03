@@ -1,2 +1,1 @@
-print("cat" + " " + "dog")
-
+print("cat" + " " + "dog") 
