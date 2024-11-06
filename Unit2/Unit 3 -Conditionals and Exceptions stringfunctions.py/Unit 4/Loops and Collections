@@ -1,0 +1,53 @@
+# Python has four types of collections
+# Tuple
+# Set
+# List
+# Dictionary
+
+# Today, we're going to focus on lists
+# A list is a way to store more than one vaule in a simgle variable 
+# Those vaules in the list are CALLED ITEMS
+# ITEMS can be accessed by their index (position in the list)
+                            
+best_elden_ring_weapons = ["Blasphemous Blade", "Moonveil", "Rivers of Blood", "Iron Ball", "Blood fang"]
+
+#INDEX        0      1     2     3
+best_years = [1776, 1985, 1994, 1957]
+
+#Print the index of the vaule in the list
+print(best_years.index(1985)) 
+
+#Print the best elden ring weapon
+print(best_elden_ring_weapons[0])
+
+#Print the worst of the best elden ring weapon
+print(best_elden_ring_weapons[len(best_elden_ring_weapons)-1])
+
+#List items can be changed! 
+best_elden_ring_weapons[3] = "Spiked fist"
+print(best_elden_ring_weapons)
+
+#Remove the last item in the list by its position in the list
+#The .pop() function removes an item by it's vaule
+best_elden_ring_weapons.pop(4)
+print(best_elden_ring_weapons)
+
+#Add a new item to the end of a list
+best_elden_ring_weapons.append("Mohgwyn's Scared Spear")
+best_elden_ring_weapons
+
+import random
+numbers = [random.randint(1, 100), random.randint(1, 100), random.randint(1, 100), random.randint(1, 100)]
+print(numbers)
+print(max(numbers))
+print(min(numbers)) 
+numbers.sort()
+print(numbers)
+
+
+#Strings are lists!
+#Strings are just a list of characters
+word = "potato"
+print(word[0]) 
+
+
