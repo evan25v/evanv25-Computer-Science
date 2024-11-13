@@ -19,10 +19,23 @@ def quick_sort(n):
         if n[i] < pivot:
            rPos = n[i]
            break
+  
+     #Check if l index is greater than r index 
+    if lPos > rPos:
+     #Switch pivot with item from left
+    n[lPos], n
     else:  
     #Swap l and r vaules
    
-     n[lPos] = n[rPos], n[lPos]
+    n[lPos] = n[rPos], n[lPos]
 
     print (n)
 
+def quicksort(arr):
+    if len(arr) <= 1:
+        return arr
+    else:
+        pivot = arr[0]
+        less_than_pivot = [x for x in arr[1:] if x <= pivot]
+        greater_than_pivot = [x for x in arr[1:] if x > pivot]
+        return quicksort(less_than_pivot) + [pivot] + quicksort(greater_than_pivot)
